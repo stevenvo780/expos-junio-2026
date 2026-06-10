@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Refutación de Simmias y Cebes — La Teoría de las Formas (Fedón 84c–102a)</title>
+  <meta name="author" content="Steven Vallejo">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' fill='%2315140f'/><text x='32' y='47' font-family='Georgia,serif' font-size='44' fill='%23d9b46b' text-anchor='middle'>%CE%A6</text></svg>">
+
+  <!-- reveal.js 5.x por CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/night.css" id="theme">
+  <!-- Tipografía serif académica con soporte de griego politónico -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap">
+
+  <style>
+    :root { --accent:#d9b46b; --paper:#f4efe4; }
+    .reveal {
+      --r-heading-font:'EB Garamond', Georgia, 'Times New Roman', serif;
+      --r-main-font:'EB Garamond', Georgia, 'Times New Roman', serif;
+      --r-main-font-size:34px;
+    }
+    .reveal h1, .reveal h2, .reveal h3, .reveal h4 {
+      font-family:var(--r-heading-font);
+      text-transform:none; font-weight:600; letter-spacing:.005em; line-height:1.12;
+      color:var(--paper);
+    }
+    .reveal h1 { font-size:2.0em; }
+    .reveal h2 { font-size:1.45em; margin-bottom:.5em; }
+    .reveal .kicker {
+      color:var(--accent); font-size:.5em; letter-spacing:.22em; text-transform:uppercase;
+      font-weight:500; margin:0 0 .35em 0; display:block;
+    }
+    .reveal p, .reveal li { line-height:1.42; }
+    .reveal strong { color:var(--accent); font-weight:600; }
+    .reveal em { color:#ecdfc2; font-style:italic; }
+    .reveal .lead { font-size:1.18em; line-height:1.32; }
+    .reveal .muted { color:#b7b1a4; }
+    .reveal .gk { font-style:italic; color:#ecdfc2; }
+    .reveal section { text-align:left; }
+    .reveal .center { text-align:center; }
+    .reveal ul { width:100%; }
+    .reveal blockquote {
+      border-left:3px solid var(--accent); background:rgba(255,255,255,.025);
+      font-style:italic; width:90%; box-shadow:none; padding:.5em 1em; font-size:.95em;
+    }
+    .reveal .cols { display:grid; grid-template-columns:1fr 1fr; gap:1em; align-items:start; }
+    .reveal .card {
+      border:1px solid rgba(217,180,107,.32); border-radius:.45em;
+      padding:.55em .8em; background:rgba(255,255,255,.02);
+    }
+    .reveal .card h4 { color:var(--accent); font-size:.85em; margin:0 0 .25em 0; letter-spacing:.04em; }
+    .reveal .card p, .reveal .card li { font-size:.82em; line-height:1.3; }
+    .reveal .ref { font-size:.46em; color:#928c80; margin-top:.8em; line-height:1.4; }
+    .reveal .stx { font-size:.62em; color:#cfc8b8; }
+    .reveal .footer {
+      position:fixed; bottom:10px; left:18px; font-size:12px; color:#6f6a5f;
+      font-family:var(--r-heading-font); letter-spacing:.04em; z-index:30;
+    }
+    .reveal .title-rule { width:64px; height:2px; background:var(--accent); border:0; margin:1em auto; }
+    .reveal mjx-container { color:#ecdfc2; }
+    .reveal .num { color:var(--accent); font-weight:600; }
+  </style>
+</head>
+<body>
+<div class="reveal">
+  <div class="slides">
+
+    <!-- 1 · PORTADA -->
+    <section class="center" data-background-color="#15140f">
+      <p class="kicker">Fedón 84c – 102a</p>
+      <h1>Refutación de Simmias y Cebes</h1>
+      <hr class="title-rule">
+      <h2 style="font-weight:500;color:#ecdfc2;">La Teoría de las Formas</h2>
+      <p class="muted" style="margin-top:1.4em;">
+        <strong style="color:var(--paper);">Steven Vallejo</strong><br>
+        Curso de Platón · 11 de junio de 2026
+      </p>
+      <aside class="notes">
+        Buenos días. Hoy voy a exponer un pasaje del Fedón —de 84c a 102a— que es a la vez el momento más dramático y el más técnico del diálogo.
+        Sócrates acaba de dar tres argumentos por la inmortalidad del alma, y dos de sus interlocutores, Simmias y Cebes, no quedan convencidos.
+        El interés de este tramo es doble: primero, contiene las dos objeciones más serias que se le plantean a Sócrates en todo el diálogo; segundo, para responderlas, Platón se ve obligado a formular por primera vez de manera explícita la Teoría de las Formas como teoría de la *causa*.
+        Mi plan es reconstruir el argumento con precisión y, al final, leerlo con una óptica crítica: ¿la Teoría de las Formas explica la vida del alma, o solo la redescribe? Empecemos por ubicarnos.
+      </aside>
+    </section>
+
+    <!-- 2 · MAPA / UBICACIÓN -->
+    <section>
+      <p class="kicker">Ubicación del pasaje</p>
+      <h2>¿Dónde estamos en el argumento?</h2>
+      <p class="lead">La pregunta del <em>Fedón</em>: ¿es el alma inmortal —<span class="gk">athánatos</span>?</p>
+      <ul>
+        <li class="fragment">Tres argumentos previos: los <strong>contrarios</strong> (cíclico, 70c), la <strong>reminiscencia</strong> (<span class="gk">anámnesis</span>, 72e), la <strong>afinidad</strong> con lo inteligible (78b).</li>
+        <li class="fragment">En <strong>84c</strong>, tras la afinidad, una pausa: el «canto del cisne». Simmias y Cebes siguen <em>sin convencerse</em>.</li>
+        <li class="fragment">De ahí brotan <strong>dos objeciones</strong> de distinto calibre — y la necesidad de una nueva fundamentación.</li>
+      </ul>
+      <p class="ref">Fedón 70c–84b (argumentos previos); 84c–85b (interludio del cisne).</p>
+      <div class="footer">Fedón · Refutación y Formas</div>
+      <aside class="notes">
+        Para situarnos: el Fedón transcurre el último día de Sócrates, antes de beber la cicuta. La tesis a defender es que el alma es athánatos, inmortal.
+        Hasta aquí Sócrates ha ofrecido tres pruebas. El argumento de los contrarios: todo surge de su opuesto, luego lo vivo surge de lo muerto y viceversa, hay un ciclo. El argumento de la reminiscencia: aprender es recordar lo que el alma ya conocía, luego el alma preexiste al cuerpo. Y el argumento de la afinidad: el alma se parece a lo invisible, simple y divino, por tanto es difícilmente disoluble.
+        En 84c hay un respiro —Sócrates se compara con los cisnes de Apolo, que cantan más bello al morir— y se invita a las objeciones. Quiero que retengan algo: ninguno de los tres argumentos previos ha probado la *imperecibilidad* en sentido fuerte. Esa grieta es la que van a explotar Simmias y Cebes.
+      </aside>
+    </section>
+
+    <!-- 3 · OBJECIÓN DE SIMMIAS -->
+    <section>
+      <p class="kicker">Primera objeción</p>
+      <h2>Simmias: el alma como <span class="gk">armonía</span></h2>
+      <p class="lead">El alma sería la <strong>afinación</strong> (<span class="gk">harmonía</span>, ἁρμονία) del cuerpo — como la armonía de una lira.</p>
+      <ul>
+        <li class="fragment">La armonía es <em>invisible, incorpórea, bella, divina</em>… y aun así <strong>perece</strong> cuando se rompe el instrumento.</li>
+        <li class="fragment">Si el alma es la afinación de lo corpóreo (caliente/frío, húmedo/seco), la muerte = <strong>destemplar la lira</strong>.</li>
+        <li class="fragment">Consecuencia: el alma <em>se disipa primero</em>, antes que los restos del cuerpo. Ningún argumento de afinidad la salva.</li>
+      </ul>
+      <p class="ref">Fedón 85e–86d.</p>
+      <div class="footer">Fedón · Refutación y Formas</div>
+      <aside class="notes">
+        La objeción de Simmias es elegante y peligrosa porque usa contra Sócrates su propio argumento de afinidad.
+        Dice: concedamos que el alma es invisible, incorpórea, bella, afín a lo divino. Todo eso lo cumple también la *armonía* de una lira afinada: la afinación no se ve, no se toca, es algo bello y casi divino. Y sin embargo, si rompes la lira, la armonía se desvanece de inmediato —de hecho, antes que la madera y las cuerdas, que perduran un tiempo.
+        Si el alma es ese tipo de cosa —la proporción o afinación de los elementos corporales: lo caliente y lo frío, lo seco y lo húmedo—, entonces a la muerte, cuando esa mezcla se desequilibra, el alma será lo *primero* en perecer. Fíjense que es una tesis materialista sofisticada: el alma no es materia, pero es enteramente *dependiente* de la organización de la materia. Retengan esta idea, porque en la óptica crítica la voy a leer como un protofuncionalismo.
+      </aside>
+    </section>
+
+    <!-- 4 · OBJECIÓN DE CEBES -->
+    <section>
+      <p class="kicker">Segunda objeción</p>
+      <h2>Cebes: el tejedor y los mantos</h2>
+      <p class="lead">Concede <em>más</em> que Simmias: el alma es <strong>más duradera</strong> que el cuerpo y «usa» muchos cuerpos.</p>
+      <ul>
+        <li class="fragment">Pero <strong>durabilidad ≠ inmortalidad</strong>. El tejedor teje y gasta muchos mantos; al morir, <em>el último manto le sobrevive</em>.</li>
+        <li class="fragment">Así el alma podría desgastar muchos cuerpos y, aun así, <strong>perecer en alguno</strong> — quizá en el último.</li>
+        <li class="fragment">Hace falta probar que es <span class="gk">anṓlethron</span> (ἀνώλεθρον, <em>imperecedera</em>), no solo longeva.</li>
+      </ul>
+      <p class="ref">Fedón 86e–88b; la imagen del tejedor, 87b–c.</p>
+      <div class="footer">Fedón · Refutación y Formas</div>
+      <aside class="notes">
+        Cebes es más astuto: concede casi todo. De acuerdo —dice— el alma es más fuerte y duradera que el cuerpo, incluso sobrevive a la muerte y reencarna, usando un cuerpo tras otro como quien gasta vestidos.
+        Pero eso no basta. Pongan a un tejedor viejo que a lo largo de su vida tejió y gastó muchos mantos. Murió, y el último manto que tejió todavía está ahí, intacto. ¿Diríamos que el tejedor es más perecedero que un manto? No: simplemente, de las muchas cosas que sobrevive, una —la última— lo sobrevive a él.
+        Análogamente: aunque el alma sobreviva a muchos cuerpos, podría desgastarse y perecer ella misma en alguna de esas «encarnaciones» —tal vez justo antes del último cuerpo. La sobrevivencia repetida no demuestra la inmortalidad. Lo que Cebes exige es una prueba de *imperecibilidad* —anṓlethron—, no de mera longevidad. Esta exigencia es la que obliga a Sócrates a cambiar de método y, con ello, a introducir las Formas como causa. Es la objeción filosóficamente más profunda del diálogo.
+      </aside>
+    </section>
+
+    <!-- 5 · INTERLUDIO: MISOLOGÍA -->
+    <section>
+      <p class="kicker">Respuesta de Sócrates · I (a)</p>
+      <h2>Advertencia: la <span class="gk">misología</span></h2>
+      <p class="lead">El auditorio se desanima. Riesgo: <strong>odiar los argumentos</strong> (<span class="gk">misología</span>, μισολογία) como se odia a los hombres (misantropía).</p>
+      <ul>
+        <li class="fragment">Nace de <em>confiar ingenuamente</em> en un razonamiento y luego <em>decepcionarse</em>.</li>
+        <li class="fragment">La culpa no es de los <span class="gk">lógoi</span>: es nuestra <strong>falta de arte</strong> (téchne) para razonar.</li>
+        <li class="fragment">Norma metódica: <em>no abandonar la razón</em> ante dos objeciones difíciles.</li>
+      </ul>
+      <p class="ref">Fedón 88c–91c (interludio); la misología, 89d–90e.</p>
+      <div class="footer">Fedón · Refutación y Formas</div>
+      <aside class="notes">
+        Tras la doble objeción, Fedón —el narrador— cuenta que todos quedaron abatidos: parecía que las pruebas se derrumbaban. Sócrates hace una pausa terapéutica antes de responder, y es una de las páginas más bellas del diálogo.
+        Advierte contra la *misología*, el odio a los argumentos. Surge igual que la misantropía: confías sin discernimiento en alguien, te decepciona, y acabas desconfiando de todos. Quien confía ingenuamente en un razonamiento, lo ve refutado, y concluye que «ningún argumento es fiable», comete el mismo error.
+        La lección es metodológica y la quiero subrayar porque es analítica avant la lettre: la culpa no está en los lógoi, sino en nuestra falta de arte para manejarlos. No hay que renunciar a la razón porque un argumento falle; hay que razonar mejor. Es exactamente el espíritu con el que Sócrates va a reconstruir todo desde cero en la segunda navegación.
+      </aside>
+    </section>
+
+    <!-- 6 · REFUTACIÓN DE SIMMIAS -->
+    <section>
+      <p class="kicker">Respuesta de Sócrates · I (b)</p>
+      <h2>Por qué el alma <em>no</em> es armonía</h2>
+      <div class="cols">
+        <div class="card fragment">
+          <h4>1 · Contradice la <span class="gk">anámnesis</span></h4>
+          <p>Si aprender es recordar, el alma <em>preexiste</em> al cuerpo. Pero una armonía <strong>no existe antes</strong> que sus elementos (las cuerdas, antes que la afinación). Simmias acepta la reminiscencia ⇒ debe rechazar la armonía.</p>
+        </div>
+        <div class="card fragment">
+          <h4>2 · La armonía admite <em>grados</em></h4>
+          <p>Una afinación es «más» o «menos» armónica; pero <strong>ningún alma es «más alma»</strong> que otra. Y todas las almas serían igual de buenas — absurdo.</p>
+        </div>
+        <div class="card fragment" style="grid-column:1 / span 2;">
+          <h4>3 · El alma <em>gobierna</em>, no acompaña</h4>
+          <p>Una armonía nunca se opone a sus componentes; el alma <strong>manda y se enfrenta</strong> al cuerpo — Odiseo «golpeó su pecho y reprendió su corazón» (Hom., <em>Od.</em> XX). Luego el alma no es una armonía.</p>
+        </div>
+      </div>
+      <p class="ref">Fedón 91c–95a. La cita homérica, 94d–e.</p>
+      <div class="footer">Fedón · Refutación y Formas</div>
+      <aside class="notes">
+        Sócrates responde a Simmias con tres argumentos; este es el bloque más limpiamente lógico del pasaje.
+        Primero, un argumento de coherencia: Simmias ya aceptó que aprender es recordar, lo que implica que el alma preexiste al cuerpo. Pero la tesis de la armonía implica lo contrario: una afinación no puede existir antes que la lira y las cuerdas que afina. Las dos tesis son incompatibles, y Simmias tiene que elegir; elige la reminiscencia. Es un argumento *ad hominem* en el buen sentido: lo refuta con sus propios compromisos.
+        Segundo, el argumento de los grados: las armonías admiten más y menos —una lira puede estar mejor o peor afinada—. Pero no tiene sentido decir que un alma es «más alma» que otra. Y si el alma fuera armonía y la virtud fuera buena afinación, todas las almas, por ser igualmente almas, serían igualmente virtuosas. Eso es falso: hay almas mejores y peores. Luego el alma no es armonía.
+        Tercero, el más fuerte: una afinación jamás contradice las cuerdas que la componen, va siempre «a favor». Pero el alma se *opone* al cuerpo: lo reprime, lo gobierna, le lleva la contraria —y Sócrates cita a Homero, a Odiseo golpeándose el pecho y reprendiendo a su corazón. Lo que gobierna no puede ser un mero efecto de lo gobernado. Conclusión: el alma no es la armonía del cuerpo. Simmias queda refutado.
+      </aside>
+    </section>
+
+    <!-- 7 · SEGUNDA NAVEGACIÓN -->
+    <section>
+      <p class="kicker">Respuesta de Sócrates · II</p>
+      <h2>La «segunda navegación» (<span class="gk">deúteros ploûs</span>)</h2>
+      <p class="lead">Para responder a Cebes hace falta la <strong>causa</strong> (<span class="gk">aitía</span>) de la generación y la destrucción.</p>
+      <ul>
+        <li class="fragment"><strong>Autobiografía intelectual</strong> (96a): la <span class="gk">perì phýseōs historía</span> y la confusión sobre el «porqué».</li>
+        <li class="fragment"><strong>Decepción con Anaxágoras</strong>: invoca el <span class="gk">Noûs</span> (νοῦς) pero explica por aire, éter, agua — <em>no</em> por lo mejor.</li>
+        <li class="fragment">Distinción clave: la <strong>causa real</strong> vs. la <em>condición sin la cual</em> — Sócrates está preso por <em>elegir lo justo</em>, no por sus huesos y tendones (99b).</li>
+        <li class="fragment">El giro (99d): refugiarse en los <span class="gk">lógoi</span> y el <strong>método de hipótesis</strong> (100a) — poner el <span class="gk">lógos</span> más firme y aceptar lo que con él concuerda.</li>
+      </ul>
+      <p class="ref">Fedón 96a–99d (autobiografía); 99c–d (deúteros ploûs); 100a (hipótesis).</p>
+      <div class="footer">Fedón · Refutación y Formas</div>
+      <aside class="notes">
+        A Cebes no le sirve un argumento más del mismo tipo: pide una explicación de qué hace que algo *llegue a ser y deje de ser*. Sócrates responde con un relato autobiográfico que es, en realidad, una pequeña historia de la filosofía.
+        De joven —dice— se entusiasmó con la investigación de la naturaleza, la perì phýseōs historía: ¿por qué crecen los seres, por qué se corrompen? Y se enredó: las explicaciones físicas no daban el «porqué» que buscaba. Entonces oyó que Anaxágoras ponía a un Noûs, una Mente, ordenándolo todo. Se ilusionó: si una Mente ordena, lo hará *para lo mejor*, así que cada cosa se explicará mostrando por qué es mejor que sea así. Pero al leerlo se decepcionó: Anaxágoras nombra al Noûs y luego explica todo por aire, éter y agua, por causas mecánicas.
+        Aquí viene la distinción que es el corazón filosófico del pasaje, y que vale para toda la historia de la causalidad: una cosa es la *causa real* —por qué Sócrates está sentado en la cárcel: porque juzgó que era lo justo y lo mejor— y otra muy distinta la *condición necesaria* sin la cual la causa no podría operar —sus huesos, sus tendones, que le permiten estar sentado. Confundir la condición con la causa, dice, es absurdo.
+        Como mirar las cosas directamente lo «cegaba» —como mirar el sol en un eclipse—, opta por una «segunda navegación»: cuando no hay viento, se rema. Refugiarse en los lógoi, en los enunciados, y examinar en ellos la verdad de los entes. De ahí el método de hipótesis: pongo el enunciado que juzgo más firme y tomo por verdadero lo que concuerda con él, por falso lo que no. Sobre ese método se va a montar la Teoría de las Formas.
+      </aside>
+    </section>
+
+    <!-- 8 · LAS FORMAS COMO CAUSA -->
+    <section>
+      <p class="kicker">El recurso explicativo</p>
+      <h2>Las Formas como causa (<span class="gk">aitía</span>) y la participación</h2>
+      <ul>
+        <li class="fragment"><strong>La causa segura</strong>: hay un <em>Bello en sí</em>, un <em>Igual</em>, un <em>Grande</em> y un <em>Pequeño</em>. Lo bello es bello por <strong>participar</strong> (<span class="gk">méthexis</span>, μέθεξις) en lo Bello.</li>
+        <li class="fragment"><strong>La causa más fina</strong>: la Forma <em>excluye a su contrario</em> — lo Grande nunca será pequeño; el fuego trae lo Caliente y rechaza lo Frío.</li>
+        <li class="fragment"><strong>El argumento final</strong> (de 100b en adelante): el alma porta consigo la Forma de <em>Vida</em> y, por ello, <em>excluye la Muerte</em>.</li>
+      </ul>
+      <p class="stx fragment center" style="margin-top:.4em;">
+        \[ \text{Alma}\Rightarrow\text{Vida}, \quad \text{Vida}\equiv\lnot\,\text{Muerte} \;\;\therefore\;\; \lnot\,(\text{Alma}\ \text{admite Muerte}) \]
+      </p>
+      <p class="fragment center"><span class="gk">… luego el alma es athánatos (ἀθάνατον). Paso disputado:</span> ¿athánatos ⇒ anṓlethron?</p>
+      <p class="ref">Fedón 100b–101c (méthexis); el argumento culmina en 102a→105e (la Forma de Vida).</p>
+      <div class="footer">Fedón · Refutación y Formas</div>
+      <aside class="notes">
+        Aquí Platón formula la Teoría de las Formas en su función propiamente *causal*. La «causa segura» —o «ingenua», como él la llama con cierta ironía— es esta: existe lo Bello en sí, lo Igual en sí, lo Grande en sí; y si algo es bello, lo es por una sola razón: porque participa de lo Bello. Méthexis, participación. No por su color, ni por su forma, ni por ninguna causa física: por la presencia de la Forma. Lo mismo para lo igual, lo grande, lo pequeño.
+        Luego refina: las Formas excluyen a sus contrarios. Lo Grande mismo nunca admitirá ser pequeño. Y no solo las Formas: también las cosas que *traen necesariamente* una Forma. El fuego trae siempre lo Caliente y, por eso, rechaza lo Frío: ante el frío, o se retira o perece, pero nunca se vuelve frío-fuego. El número tres trae lo Impar y excluye lo Par.
+        Y entonces el golpe final —que técnicamente se completa hacia 105, justo después de nuestro corte en 102a, pero que el método deja ya servido—: ¿qué trae el alma a aquello en lo que está? La vida. El alma porta consigo la Forma de Vida. Pero lo que trae una Forma excluye al contrario de esa Forma; y el contrario de la Vida es la Muerte. Luego el alma no admite la muerte: es athánatos, «no-muerte», deathless.
+        Quiero que noten —y esto lo retomo en la crítica— que el argumento prueba estrictamente que el alma es *deathless*, athánatos. El paso de ahí a *imperecedera* (anṓlethron) —que es justo lo que pedía Cebes— necesita una premisa extra: que lo deathless es además indestructible. Platón la añade, pero es el eslabón disputado.
+      </aside>
+    </section>
+
+    <!-- 9 · ÓPTICA CRÍTICA -->
+    <section>
+      <p class="kicker">Óptica crítica · núcleo analítico</p>
+      <h2>¿Explica o solo <em>redescribe</em>?</h2>
+      <div class="cols">
+        <div class="card fragment">
+          <h4>Simmias → emergentismo</h4>
+          <p>La <em>armonía</em> como <strong>protofuncionalismo</strong>: la mente/alma como propiedad <strong>emergente</strong> de la organización del cuerpo. La «afinación» <em>sobreviene</em> a la configuración física.</p>
+        </div>
+        <div class="card fragment">
+          <h4>Sócrates → esencialismo</h4>
+          <p>Las Formas dan al alma una <strong>esencia</strong> (portar la Vida) <em>independiente</em> de la organización corpórea. La causa es formal, no material.</p>
+        </div>
+      </div>
+      <p class="fragment" style="margin-top:.5em;"><strong>Objeción aristotélica</strong> (<em>Metafísica</em> A.9, 991a): decir que las cosas son «por participación» en las Formas es <em>«hablar con palabras vacías y usar metáforas poéticas»</em>. La Forma no es causa eficiente: <strong>no explica la generación ni el cambio</strong>.</p>
+      <p class="fragment"><span class="muted">Contraste:</span> la emergencia ofrece un <strong>mecanismo</strong> (organización → propiedades nuevas); la <span class="gk">méthexis</span> nombra una <em>relación</em> sin especificar mecanismo.</p>
+      <p class="ref">Aristóteles, <em>Metaph.</em> A.9, 991a20–22 (κενολογεῖν … μεταφορὰς λέγειν ποιητικάς). Cf. el «tercer hombre».</p>
+      <div class="footer">Fedón · Refutación y Formas</div>
+      <aside class="notes">
+        Aquí está mi lectura, la óptica que el profesor pide defender. Tomo en serio la pregunta: ¿la Teoría de las Formas *explica* la vida del alma, o solo la *redescribe* con otro vocabulario?
+        Primero, una rehabilitación de Simmias. Su tesis del alma-armonía no es una ocurrencia: es, leída con ojos contemporáneos, un *protofuncionalismo* o *emergentismo*. La idea de que lo mental es la afinación, la organización funcional del sustrato corporal —algo que sobreviene a la configuración física y desaparece cuando esa configuración se deshace— es la intuición que recorre desde la teoría de la identidad hasta el funcionalismo y las teorías de la emergencia de la mente. Simmias propone un *mecanismo*: el alma es lo que la organización del cuerpo *hace*.
+        Frente a eso, la respuesta de Sócrates es esencialista: el alma tiene una esencia —portar la Vida— que es independiente de cómo esté organizado el cuerpo, y la causa de que esté viva es una causa *formal*, la participación en una Forma.
+        Y aquí entra Aristóteles, que fue alumno de Platón y formuló la objeción decisiva en Metafísica A.9. Dice, casi con desdén, que afirmar que las cosas existen «por participación» en las Formas es *kenologein kai metaphoras legein poietikas*: hablar con palabras vacías y usar metáforas poéticas. ¿Por qué? Porque la Forma, siendo separada e inmóvil, no puede ser causa *eficiente*: no explica por qué *esta* cosa llega a ser, ni el cambio, ni el movimiento. «Participar» no es un proceso; es un nombre para el explanandum disfrazado de explanans. A esto se suma el regreso del «tercer hombre».
+        El contraste es nítido y es mi tesis: una explicación emergentista ofrece un *mecanismo* —dada esta organización, surgen estas propiedades nuevas—; la méthexis, en cambio, ofrece una *relación* postulada entre la cosa y la Forma, sin decir nunca *cómo* la Forma produce el efecto. Por eso digo que las Formas, en su función causal, redescriben más de lo que explican.
+      </aside>
+    </section>
+
+    <!-- 10 · CIERRE -->
+    <section>
+      <p class="kicker">Balance y pregunta</p>
+      <h2>Qué gana y qué deja abierto el <em>Fedón</em></h2>
+      <div class="cols">
+        <div class="card fragment">
+          <h4>Lo que gana</h4>
+          <p>Un <strong>método</strong> (la hipótesis), la distinción <strong>causa real vs. condición</strong> (99b) y la introducción de la <strong>causalidad formal</strong>. Es un avance metodológico real.</p>
+        </div>
+        <div class="card fragment">
+          <h4>Lo que queda abierto</h4>
+          <p>El <strong>estatuto explicativo</strong> de la participación. La <span class="gk">méthexis</span> es una <em>brecha</em>: promete causalidad y entrega, a lo sumo, una redescripción.</p>
+        </div>
+      </div>
+      <blockquote class="fragment" style="margin-top:.7em;">
+        ¿Basta una <strong>causa formal</strong> para explicar la <em>vida</em> del alma, o necesitamos —como en el emergentismo— un <strong>mecanismo de organización</strong>? ¿Es «la Forma de Vida» una <em>explicación</em> o un <em>nombre</em>?
+      </blockquote>
+      <p class="ref">Pregunta para el seminario.</p>
+      <div class="footer">Fedón · Refutación y Formas</div>
+      <aside class="notes">
+        Cierro con un balance ecuánime, porque sería injusto leer el Fedón solo como un fracaso explicativo.
+        Lo que el diálogo *gana* es considerable. Gana un método —el de hipótesis—, que es el antepasado de buena parte de la racionalidad filosófica y científica posterior. Gana la distinción entre causa real y condición necesaria, que sigue viva hoy en cualquier discusión sobre causalidad: confundir el sustrato neuronal con la razón de una acción es exactamente el error que Sócrates denuncia en 99b. Y gana la idea misma de *causalidad formal*: que para explicar algo a veces hay que apelar a su forma o estructura, no solo a su materia.
+        Lo que *deja abierto* es el estatuto de la participación. La méthexis nunca se explica; es el punto ciego de la teoría, y Platón mismo, en el Parménides, va a someterlo a una autocrítica feroz. Mi postura, como filósofo analítico y emergentista, es esta: el método de las Formas es un avance, pero como *explicación causal de lo sensible* promete más de lo que entrega.
+        Y dejo la pregunta abierta para el seminario: ¿basta una causa formal para dar cuenta de la vida del alma, o hace falta —como sostiene el emergentismo— un mecanismo de organización que muestre *cómo* surge la vida? Dicho de forma provocadora: «la Forma de Vida», ¿es una explicación, o es solo un nombre elegante para aquello que queríamos explicar? Gracias.
+      </aside>
+    </section>
+
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/notes/notes.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/math/math.js"></script>
+<script>
+  Reveal.initialize({
+    hash: true,
+    slideNumber: 'c/t',
+    transition: 'fade',
+    transitionSpeed: 'default',
+    center: true,
+    width: 1100,
+    height: 740,
+    margin: 0.08,
+    math: {
+      mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js',
+      tex: { inlineMath: [['\\(','\\)']], displayMath: [['\\[','\\]']] },
+      options: { skipHtmlTags: ['script','noscript','style','textarea','pre'] }
+    },
+    plugins: [ RevealNotes, RevealMath.MathJax3 ]
+  });
+</script>
+</body>
+</html>

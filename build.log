@@ -1,0 +1,31 @@
+Listo. Ambas presentaciones están construidas, verificadas y empaquetadas.
+
+## Entregables
+
+```
+/workspace/expos-junio-2026/
+├── README.md          # preview + notas de deploy en Vercel
+├── STATUS.json        # done:true · platon:10 · ciudad:10 · errors:[]
+├── platon/index.html  # 10 slides + 10 notas del ponente
+└── ciudad/index.html  # 10 slides + 10 notas del ponente
+```
+
+Cada `index.html` es autocontenido: reveal.js **5.1.0** por CDN, tema **night**, serif **EB Garamond** (con griego politónico), **MathJax 3** vía plugin, y notas del ponente (tecla **S**).
+
+## Verificación (real, no solo curl)
+- `python3 -m http.server 8099` → **HTTP 200** en `/platon/`, `/ciudad/`, `/README.md`.
+- Smoke test headless con Playwright en ambos decks: `Reveal.isReady()=true`, **10 secciones** y **10 `aside.notes`**, plugins `['notes','mathjax3']` registrados, la fórmula LaTeX del argumento final de Platón **se tipografía** (`mjx-container`), y **consola con 0 errores** (añadí un favicon SVG inline para eliminar el único 404 de `favicon.ico`).
+- Servidor detenido y artefactos de prueba limpiados.
+
+## Contenido (rigor conceptual)
+- **Platón** — sigue la estructura canónica de `tareas-universidad.md` y el Fedón 84c–102a: objeciones de Simmias (armonía) y Cebes (tejedor/mantos), misología, refutación en 3 argumentos (anámnesis / grados / el alma gobierna), segunda navegación (Anaxágoras → *lógoi* → hipótesis), Formas como *aitía* + *méthexis* + argumento de la Forma de Vida (`athánatos`). La **óptica crítica** lee la armonía de Simmias como **protofuncionalismo/emergentismo** vs. el **esencialismo** socrático, con la objeción de Aristóteles (*Metaf.* A.9, 991a: «palabras vacías y metáforas poéticas») y tu postura: avance metodológico pero la *méthexis* redescribe más de lo que explica. Cierra con la pregunta de seminario.
+- **Ciudad** — condensación **fiel** de `exposicion-limites-ia-ciudad.md` (secciones 0–8) a ideas-fuerza: tesis, ethos, deflación ontológica (Dreyfus), autopoiesis (Maturana-Varela, Aguilar 2014, Johnson 2001), choque epistemológico (Haraway/Husserl/Merleau-Ponty), falacia de la agencia algorítmica (Scott, *metis*), prueba performativa (HPC + qwen3:14b) y co-producción asimétrica. El slide de cierre eleva la conclusión al marco de **Yuk Hui**: *cosmotécnica* y **tecnodiversidad**.
+
+## Para previsualizar
+```bash
+cd /workspace/expos-junio-2026 && python3 -m http.server 8099
+# http://localhost:8099/platon/   ·   http://localhost:8099/ciudad/
+# tecla S → vista del ponente con el guion hablado
+```
+
+Notas: dejé **2 decisiones documentadas en el README** — SRI omitido a propósito en los recursos CDN (el plugin de math carga MathJax internamente; alternativa de endurecimiento descrita), y la opción de vendorizar assets para un paquete 100% offline. No hice `git push` ni deploy (sin credenciales), como pediste. El recuento quedó en 10/10 slides: preferí mantener cada slide limpio antes que comprimir al mínimo del rango.
